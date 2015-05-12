@@ -1,1 +1,54 @@
-<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><title>Cleverbot.io CDN | Powered By Fastly</title></head><body bgcolor="red"><div style="position:absolute;width:60%;left:20%;top:30%"><h1 style="color:white">Cleverbot.io CDN</h1><br><br><h2 style="color:white">Proudly Powered by <img src="/fastly.png" height="64"></h2></div></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cleverbot.io CDN | Powered By Fastly</title>
+  </head>
+  <link href="//cdn.cleverbot.io/web/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.cleverbot.io/web/github.min.css">
+  <body>
+    		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					
+					<h3 style="opacity:0.5"><i class="fa fa-code" style="opacity:0.5;"></i><br> Quick Start</h3><hr>
+					<div role="tabpanel">
+
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade mdd" id="js"><br>
+							<p>To use this package, simply <a class="btn-link" href="https://github.com/CleverbotIO/cleverbot.io.js/archive/master.zip">download</a> it, place <em>cleverbot.io.min.js</em> in the web directory add the following to your page</p>
+<pre><code class="html">&lt;script src=&quot;cleverbot.io.min.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>or you can use the Cleverbot.io CDN</p>
+<pre><code class="html">&lt;script src=&quot;//cdn.cleverbot.io/build/1.0/cleverbot.io.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Before using this module, please get your API keys at <a href="https://cleverbot.io/keys">https://cleverbot.io/keys</a></p>
+<p>To initialize cleverbot, create a new instance of cleverbot</p>
+<pre><code class="javascript">var bot = new cleverbot(&quot;YOUR_API_USER&quot;, &quot;YOUR_API_KEY&quot;);
+</code></pre><p><em>cleverbot.io</em> allows you to save cleverbot sessions to access later<br>If you&#39;ve already created a session previously, simply add the following code to reference it</p>
+<pre><code class="javascript">bot.setNick(&quot;sessionname&quot;)
+</code></pre><p>To create or access a cleverbot session, start with the following</p>
+<pre><code class="javascript">bot.create(function (err, session) {
+  // session is your session name, it will either be as you set it previously, or cleverbot.io will generate one for you
+
+  // Woo, you initialized cleverbot.io.  Insert further code here
+});
+</code></pre><p>Now querying cleverbot is simple, you pass the text to the <em>.ask()</em> method</p>
+<pre><code class="javascript">bot.ask(&quot;Just a small town girl&quot;, function (err, response) {
+  console.log(response); // Will likely be: &quot;Living in a lonely world&quot;
+});
+</code></pre><p>Well, that&#39;s it for now!  Happy hacking!</p>
+<p><strong>Cleverbot.io is free and open source, and will remain so.</strong></p>
+						</div>
+					  </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+    <script src="//cdn.cleverbot.io/web/jquery.min.js"></script>
+    <script src="//cdn.cleverbot.io/web/highlight.min.js"></script>
+  </body>
+</html>
