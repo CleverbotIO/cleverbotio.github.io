@@ -19,7 +19,7 @@ if (c == "") {
   swal({
     title: "Upcoming Changes",
     text: "Cleverbot.io is becoming a part of the official Cleverbot API. Charges for high volumes will soon have to apply.\n\nWe intend Cleverbot.io to remain compatible with current calls and keys. The quality of replies will improve, and new options are on the way.",
-    imageUrl: '//cdn.cleverbot.io/cbapi.jpg'
+    type: "info"
   });
   document.cookie = 'c_merge_notified=t';
 }
